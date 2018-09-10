@@ -10,7 +10,7 @@ using namespace std;
 int main(void)
 {
 	string content;
-	if (!KeyExtract_Init("/data/nlpir/KeyExtract", 1))
+	if (!KeyExtract_Init("../KeyExtract", 1))
 	{
 		printf("\n初始化失败\n");
 		return 0;

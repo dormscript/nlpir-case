@@ -14,7 +14,7 @@ int main(void)
 	int i = 1;
 	string content;
 	ostringstream ss;
-	if (!CLUS_Init("/data/nlpir/Cluster", "", 1))
+	if (!CLUS_Init("../Cluster", "", 1))
 	{
 		printf("初始化失败：%s\n" ,CLUS_GetLastErrMsg());
 		printf("按任意键继续...");

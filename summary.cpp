@@ -10,7 +10,7 @@ using namespace std;
 int main(void)
 {
 	string content;
-	if (!DS_Init("/data/nlpir/Summary", 0))
+	if (!DS_Init("../Summary", 0))
 	{
 		printf("\n初始化失败\n");
 		return 0;

@@ -10,7 +10,7 @@ using namespace std;
 int main(void)
 {
 	string content;
-	if (!DE_Init("/data/nlpir/DocExtractor", 1))
+	if (!DE_Init("../DocExtractor", 1))
 	{
 		printf("\n初始化失败\n");
 		return 0;
