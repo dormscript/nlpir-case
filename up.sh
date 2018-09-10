@@ -1,3 +1,4 @@
+#!/bin/bash
 #更新代码shell
 
 svn up ../license;
