@@ -17,7 +17,7 @@ int main(void)
 	}
 	while(1) {
 		getline(cin,content);
-		if(cin == "END") {
+		if(content == "END") {
 			break;
 		}
 		string sResult = KeyExtract_GetKeyWords(content.c_str(), 50, 0);

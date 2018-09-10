@@ -17,6 +17,9 @@ int main(void)
 	}
 	while(1) {
 		getline(cin,content);
+		if(content == "END") {
+			break;
+		}
 		DOC_PARSER_HANDLE handle = DE_ParseDocE(content.c_str(), "", false, HTML_REMOVER_REQUIRED);
 		
 		string keywords = DE_GetResult(handle, DOC_EXTRACT_TYPE_KEYWORD);

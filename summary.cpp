@@ -17,6 +17,9 @@ int main(void)
 	}
 	while(1) {
 		getline(cin,content);
+		if(content == "END") {
+			break;
+		}
 		string sResult = DS_SingleDoc(content.c_str(), 0 , 500, true);
 		printf("%s\n", sResult.c_str());
 	}
