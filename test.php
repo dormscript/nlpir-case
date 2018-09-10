@@ -62,9 +62,9 @@ class PipeInterface
     }
 }
 
-PipeInterface::addPragram('doc', '/data/nlpir/demo/doc');
-PipeInterface::addPragram('key', '/data/nlpir/demo/key');
-PipeInterface::addPragram('summary', '/data/nlpir/demo/summary');
+PipeInterface::addPragram('doc', './doc');
+PipeInterface::addPragram('key', './key');
+PipeInterface::addPragram('summary', './summary');
 
 //需要处理的字符串
 $content = str_replace(array("\n", "\t", " "), '', strip_tags(file_get_contents('article.txt')));
